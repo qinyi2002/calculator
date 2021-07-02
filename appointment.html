@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>    
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-left w3-hover-dark-gray" href="javascript:void(0)" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
+                    Home
+                </a>
+
+                <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
+                    IRA Retirement
+                </a>
+
+                <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
+                    Optimal Retirement Plan
+                </a>
+
+                <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
+                    Schedule Appointment
+                </a>
+            </div>
+        </div>
+        
+        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+        <div id="nav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-top " style="margin-top:46px">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                Home
+            </a>
+
+            <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                IRA Retirement
+            </a>
+
+            <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                Optimal Retirement Plan
+            </a>
+
+            <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                Schedule Appointment
+            </a>
+        </div>
+
+        <!-- Page content -->
+        <div style="max-width:100%; margin-top:40px">
+
+            <!-- Push down content on small screens --> 
+            <div class="w3-hide-large" style="margin-top:40px"></div>
+
+            <!-- About section -->
+            <div class="w3-container w3-center" style="padding-top:70px; padding-bottom: 70px;">
+                <div style="margin: auto; width: 80%;" >
+                    <h2>
+                        <b>Schedule Appointment</b>
+                    </h2>
+        
+                    <div style="max-width:100%;">
+                        <p>
+                            You can schedule an appointment with a specialist by by filling out the form below
+                        </p>
+                    </div>
+                </div>
+                <div style="width: auto; margin: auto;" class="appt">
+                    <form
+                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8ipOTFTAeuxsTy_0JJ767CFM7FZyMQuK3sromYh9oH0PQQg/formResponse" 
+                        method="post"
+                        target="_blank">
+                        <div class="container3">
+                            <br>
+                            <p style="text-align: left; color: red;">* required</p>
+                            <div class="row">
+                                <label for="fname">* First Name: </label>
+                                <input name="entry.664612347" type="text" id="fname" required/>
+
+                                <label for="lname">* Last Name: </label>
+                                <input name="entry.1231319587" type="text" id="lname" required/>
+
+                                <label for="phone">* Phone Number: </label>
+                                <input name="entry.588849660" type="text" id="phone" required 
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    placeholder="Phone Number Format: xxx-xxx-xxxx"
+                                    title="The format for the phone number should be xxx-xxx-xxxx"/>
+                                    
+                                <label for="email">Email: </label>
+                                <input name="entry.2139340644" type="email" id="email" placeholder=""/>
+
+                                <label for="date">* Date: </label>
+                                <input name="entry.407335839" type="date" id="date" required /> 
+                            </div>
+                            <br>
+                            <br>
+                            <div class="row">
+                                <button id="print" class="w3-button w3-right w3-green w3-hover-black" onclick="printChart()">Submit</button>
+                            </div>  
+                            <br>
+                        </div>
+                    </form>   
+                </div>
+                    
+            </div>
+
+            <!-- Contact section -->
+            <div class="w3-container w3-black" style="padding-top: 10px; padding-bottom: 20px;">
+                <div class="w3-center w3-content w3-center">
+                    <ul style = "list-style-type: none;">
+                        <h2 class="w3-center"><b>Contact Information</b></h2>
+                        <li>
+                            <span class="first-block">Phone Number: </span>
+                            <span class="second-block">xxx - xx - xxxx</span>
+                        </li>
+    
+                        <li>
+                            <span class="first-block">Email: </span>
+                            <span class="second-block">xxxxx @gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        <!-- End page content -->
+        </div>
+
+        <script src="script.js"> </script>
+    </body>
+</html>
