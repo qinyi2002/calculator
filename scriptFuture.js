@@ -155,7 +155,7 @@ function monteCarloSimulation() {
             age = retireAge;
 
             for (var i = 0; i <= k; i++) {
-                randomIndex = Math.floor(Math.random() * 94); // index 0 to 94
+                randomIndex = Math.floor(Math.random() * 95); // index 0 to 94
                 randomAAA = Math.floor(Math.random() * 93); // index 0 to 93
                 randomTBill = Math.floor(Math.random() * 93); // index 0 to 93
 
@@ -234,9 +234,9 @@ function monteCarloSimulation() {
             age = retireAge;
 
             for (var i = 0; i <= k; i++) {
-                randomIndex = Math.floor(Math.random() * 94);
-                randomAAA = Math.floor(Math.random() * 94); // index 0 to 93
-                randomTBill = Math.floor(Math.random() * 94); // index 0 to 93
+                randomIndex = Math.floor(Math.random() * 95);
+                randomAAA = Math.floor(Math.random() * 93); // index 0 to 93
+                randomTBill = Math.floor(Math.random() * 93); // index 0 to 93
 
                 rates = 1 + stock * iraAnnualRate[randomIndex] + bond * aaa[randomAAA] + cash * tBill[randomTBill];
 

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>IRA Retirement</title>
+        <title>Document</title>
 
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -15,169 +15,171 @@
     </head>
 
     <body>
-        <div class="navBar">
-            <!-- Navbar -->
-            <div class="w3-top">
-                <div class="w3-bar w3-black w3-card">
-                    <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-left w3-hover-dark-gray" href="javascript:void(0)" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-                    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
-                        Home
-                    </a>
-
-                    <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
-                        IRA Retirement
-                    </a>
-
-                    <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
-                        Optimal Retirement Plan
-                    </a>
-
-                    <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
-                        Schedule Appointment
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-            <div id="nav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-top " style="margin-top:46px">
-                <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-left w3-hover-dark-gray" href="javascript:void(0)" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
                     Home
                 </a>
 
-                <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
                     IRA Retirement
                 </a>
 
-                <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
                     Optimal Retirement Plan
                 </a>
 
-                <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
                     Schedule Appointment
                 </a>
             </div>
+        </div>
+        
+        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+        <div id="nav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-top " style="margin-top:46px">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                Home
+            </a>
 
-            <!-- Page content -->
-            <div style="max-width:100%; margin-top:80px" id="pageContent">
+            <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                IRA Retirement
+            </a>
 
-                <!-- Push down content on small screens --> 
-                <div class="w3-hide-large" style="margin-top:100px"></div>
+            <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                Optimal Retirement Plan
+            </a>
 
-                <!-- About section -->
-                <div class="w3-container w3-center" style="padding-bottom: 20px;">
-                        <div style="margin: auto; width: 70%;" >
-                            <h2>
-                                <b>The IRA Retirement Investment Calculator</b>
-                            </h2>
-            
-                            <div style="max-width:100%;">
-                                <p>Some questions that can be answer by using our calculator are how long will your retirement last,
-                                    how much can you withdraw each year, and
-                                    what is your balance amount each year.
-                                </p>
+            <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                Schedule Appointment
+            </a>
+        </div>
 
-                                <p>
-                                    Answer the questions below to see an illustration of your investment. 
-                                    You can make a few changes and see how it impact your investment. 
-                                </p>
-                                <br>
-                                <img src="calculatorImage.jpg" style="width: 350px;">
-                            </div>
-                        </div>
-                </div>
+        <!-- Page content -->
+        <div style="max-width:100%; margin-top:80px" id="pageContent">
 
-                <!-- IRA Retirement Income Calc section -->
-                <div class="w3-container w3-center" style="max-width:100%; padding-top:20px; padding-bottom: 70px; font-size: 15px">
-                    <form onsubmit="return false" name="iraForm">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-left">
-                                    <label>What is your retirement saving balance?</label>
-                                </div>
-                                <div class="col-right">
-                                    <input type="number" id="initialBalance" name="initialBalance" 
-                                    placeholder="Input Inital Amount" onchange="calcRate()" min="0" max="10000000">
-                                </div>
-                            </div>
+            <!-- Push down content on small screens --> 
+            <div class="w3-hide-large" style="margin-top:100px"></div>
 
-                            <div class="row">
-                                <div class="col-left">
-                                    <label>What is your retirement withdraw amount?</label>
-                                </div>
-                                <div class="col-right">
-                                    <input type="number" id="withdraw" name="withdraw" placeholder="Input Withdraw Amount" 
-                                    onchange="calcRate()" min="0" max="10000000">
-                                </div>
-                            </div>
+            <!-- About section -->
+            <div class="w3-container w3-center" style="padding-bottom: 20px;">
+                    <div style="margin: auto; width: 70%;" >
+                        <h2>
+                            <b>The IRA Retirement Investment Calculator</b>
+                        </h2>
+        
+                        <div style="max-width:100%;">
+                            <p>Some questions that can be answer by using our calculator are how long will your retirement last,
+                                how much can you withdraw each year, and
+                                what is your balance amount each year.
+                            </p>
 
-                            <div class="row" id="withdrawRate">
-                                <div class="col-left">
-                                    <label>Withdrawal rate will be shown here</label>
-                                </div>
-                                <div class="col-right">
-                                    <input type="text" id="rate" name="rate" 
-                                    placeholder="0.00 %" readonly>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-left">
-                                    <label>What is the inflation rate?</label>
-                                </div>
-                                <div class="col-right">
-                                    <input type="number" id="inflationPercentage" name="inflationPercentage" 
-                                    placeholder="Input Inflation Percentage" min="0" max="100">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-left">
-                                    <label>What is your retirement age?</label>
-                                </div>
-                                <div class="col-right">
-                                    <input type="number" id="retireAge" name="retireAge" placeholder="Input Age" min="60" max="72">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-left">
-                                    <label>How many years should your savings last?</label>
-                                </div>
-                                <div class="col-right">
-                                    <input type="number" id="savingLast" name="savingLast" onchange="checkYear()"
-                                    placeholder="Input Range" min="1" max="50">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-left">
-                                    <label>What is the starting year?</label>
-                                </div>
-                                <div class="col-right">
-                                    <input type="number" id="startYear" name="startYear" placeholder="Input Starting Year"
-                                    onchange="checkYear()" min="1926" max="2000">
-                                </div>
-                            </div>
-
-                            <div class="row" id="annualReturn">
-                                <div class="col-left">
-                                    <label>Average annual return will be shown here</label>
-                                </div>
-                                <div class="col-right">
-                                    <input type="text" id="averageAnnualReturn" name="averageAnnualReturn" readonly
-                                    placeholder="0.00 %">
-                                </div>
-                            </div>
-
+                            <p>
+                                Answer the questions below to see an illustration of your investment. 
+                                You can make a few changes and see how it impact your investment. 
+                            </p>
                             <br>
-
-                            <div class="row">
-                                <button id="check" class="w3-button w3-right w3-green w3-hover-black">Create Chart</button>
-                            </div>    
+                            <img src="calculatorImage.jpg" style="width: 350px;">
                         </div>
-                    </form> 
-                </div>
-                
+                    </div>
+            </div>
+
+            <!-- IRA Retirement Income Calc section -->
+            <div class="w3-container w3-center" style="max-width:100%; padding-top:20px; padding-bottom: 70px; font-size: 15px">
+                <form onsubmit="return false" name="iraForm">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-left">
+                                <label>What is your retirement saving balance?</label>
+                            </div>
+                            <div class="col-right">
+                                <input type="number" id="initialBalance" name="initialBalance" 
+                                placeholder="Input Inital Amount" onchange="calcRate()" min="0" max="10000000">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-left">
+                                <label>What is your retirement withdraw amount?</label>
+                            </div>
+                            <div class="col-right">
+                                <input type="number" id="withdraw" name="withdraw" placeholder="Input Withdraw Amount" 
+                                onchange="calcRate()" min="0" max="10000000">
+                            </div>
+                        </div>
+
+                        <div class="row" id="withdrawRate">
+                            <div class="col-left">
+                                <label>Withdrawal rate will be shown here</label>
+                            </div>
+                            <div class="col-right">
+                                <input type="text" id="rate" name="rate" 
+                                placeholder="0.00 %" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-left">
+                                <label>What is the inflation rate?</label>
+                            </div>
+                            <div class="col-right">
+                                <input type="number" id="inflationPercentage" name="inflationPercentage" step="any"
+                                placeholder="Input Inflation Percentage" min="0" max="100">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-left">
+                                <label>What is your retirement age?</label>
+                            </div>
+                            <div class="col-right">
+                                <input type="number" id="retireAge" name="retireAge" placeholder="Input Age" min="60" max="72">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-left">
+                                <label>How many years should your savings last?</label>
+                            </div>
+                            <div class="col-right">
+                                <input type="number" id="savingLast" name="savingLast" onchange="checkYear()"
+                                placeholder="Input Range" min="1" max="50">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-left">
+                                <label>What is the starting year?</label>
+                            </div>
+                            <div class="col-right">
+                                <input type="number" id="startYear" name="startYear" placeholder="Input Starting Year"
+                                onchange="checkYear()" min="1926" max="2000">
+                            </div>
+                        </div>
+
+                        <div class="row" id="annualReturn">
+                            <div class="col-left">
+                                <label>Average annual return will be shown here</label>
+                            </div>
+                            <div class="col-right">
+                                <input type="text" id="averageAnnualReturn" name="averageAnnualReturn" readonly
+                                placeholder="0.00 %">
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <button id="check" class="w3-button w3-right w3-green w3-hover-black">Create Chart</button>
+                        </div>
+                      
+                    </div>
+                </form> 
+
                 <br>
                 <br>
 
@@ -245,7 +247,7 @@
                             placeholder="The result will display after you submit your inputs." readonly>
                         </div>
                     </div>
-        
+    
                     <div class="row">
                         <div class="col-left">
                             <label>The total withdraw for annual withdrawal:</label>
@@ -279,7 +281,7 @@
                             placeholder="The result will display after you submit your inputs." readonly>
                         </div>
                     </div>
-        
+    
                     <div class="row">
                         <div class="col-left">
                             <label>The total withdraw for modiefied withdrawal:</label>
@@ -301,7 +303,7 @@
                             <span class="first-block">Phone Number: </span>
                             <span class="second-block">xxx - xx - xxxx</span>
                         </li>
-        
+    
                         <li>
                             <span class="first-block">Email: </span>
                             <span class="second-block">xxxxx @gmail.com</span>
