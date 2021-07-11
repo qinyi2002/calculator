@@ -9,63 +9,36 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
-        
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>    
+  
     </head>
 
     <body>
         <!-- Navbar -->
-        <div class="w3-top">
-            <div class="w3-bar w3-black">
-                <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-left w3-hover-dark-gray" onclick="myFunction()">
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
                     <i class="fa fa-bars"></i>
-                </a>
-                
-                <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
-                    Home
-                </a>
-
-                <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                    TBMRI Calculator
-                </a>
-    
-                <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                        Monte Carlo Simulator
-                    </a>
-
-                <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
-                    Schedule Appointment
-                </a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="present.html">TBMRI Calculator</a>
+                    <a href="future.html">Monte Carlo Simulator</a>
+                    <a href="appointment.html">Schedule Appointment</a>
+                </div>
             </div>
-        </div>
-        
-        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-        <div id="nav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-top " style="margin-top:46px">
-            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                Home
-            </a>
-
-            <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                TBMRI Calculator
-            </a>
-
-            <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                    Monte Carlo Simulator
-                </a>
-
-            <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                Schedule Appointment
-            </a>
+            <div class="tabs">
+                <a href="index.html">Home</a>
+                <a href="present.html">TBMRI Calculator</a>
+                <a href="future.html">Monte Carlo Simulator</a>
+                <a href="appointment.html">Schedule Appointment</a>
+            </div>
         </div>
 
         <!-- Page content -->
-        <div style="max-width:100%; margin-top:40px">
-
-            <!-- Push down content on small screens --> 
-            <div class="w3-hide-large" style="margin-top:40px"></div>
+        <div style="max-width:100%;">
 
             <!-- Servey section -->
-            <div class="w3-container w3-center" style="padding-top:70px; padding-bottom: 70px;">
+            <div style="padding-top:70px; padding-bottom: 70px; text-align:center">
                 <div style="margin: auto; width: 80%;" >
                     <h2>
                         <b>Schedule Appointment</b>
@@ -107,7 +80,7 @@
                             <br>
                             <br>
                             <div class="row">
-                                <button id="print" class="w3-button w3-right w3-green w3-hover-black" onclick="printChart()">Submit</button>
+                                <button id="print" style="color:white; background-color:rgb(0, 190, 25); float: right;" class="w3-button w3-hover-black" onclick="printChart()">Submit</button>
                             </div>  
                             <br>
                         </div>
@@ -117,22 +90,22 @@
             </div>
 
             <!-- Contact section -->
-            <div class="w3-container w3-black" style="padding-top: 10px; padding-bottom: 20px;">
-                <div class="w3-center w3-content w3-center">
-                    <ul style = "list-style-type: none;">
-                        <h2 class="w3-center"><b>Contact Information</b></h2>
-                        <li>
-                            <span class="first-block">Phone Number: </span>
-                            <span class="second-block">xxx - xx - xxxx</span>
-                        </li>
-    
-                        <li>
-                            <span class="first-block">Email: </span>
-                            <span class="second-block">xxxxx @gmail.com</span>
-                        </li>
-                    </ul>
-                </div>
+        <div style="padding-top: 10px; padding-bottom: 20px; background-color:black; color:white">
+            <div style="text-align: center;">
+                <ul style = "list-style-type: none;">
+                    <h2><b>Contact Information</b></h2>
+                    <li>
+                        <span class="first-block">Phone Number: </span>
+                        <span class="second-block">xxx - xx - xxxx</span>
+                    </li>
+
+                    <li>
+                        <span class="first-block">Email: </span>
+                        <span class="second-block">xxxxx @gmail.com</span>
+                    </li>
+                </ul>
             </div>
+        </div>
 
         <!-- End page content -->
         </div>

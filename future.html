@@ -16,54 +16,31 @@
 
 <body>
     <!-- Navbar -->
-    <div class="w3-top">
-        <div class="w3-bar w3-black">
-            <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-left w3-hover-dark-gray" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
-                    Home
-                </a>
-
-                <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                    TBMRI Calculator
-                </a>
-    
-                <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                        Monte Carlo Simulator
-                    </a>
-
-            <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
-                    Schedule Appointment
-                </a>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="present.html">TBMRI Calculator</a>
+                <a href="future.html">Monte Carlo Simulator</a>
+                <a href="appointment.html">Schedule Appointment</a>
+            </div>
+        </div>
+        <div class="tabs">
+            <a href="index.html">Home</a>
+            <a href="present.html">TBMRI Calculator</a>
+            <a href="future.html">Monte Carlo Simulator</a>
+            <a href="appointment.html">Schedule Appointment</a>
         </div>
     </div>
 
-    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-    <div id="nav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-top " style="margin-top:46px">
-        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                Home
-            </a>
-
-        <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                TBMRI Calculator
-            </a>
-
-        <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                Monte Carlo Simulator
-            </a>
-
-        <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                Schedule Appointment
-            </a>
-    </div>
-
      <!-- Page content -->
-     <div style="max-width:100%; margin-top:80px">
-
-        <!-- Push down content on small screens --> 
-        <div class="w3-hide-large" style="margin-top:100px"></div>
+     <div style="max-width:100%; margin-top:30px">
 
         <!-- About section -->
-        <div class="w3-container w3-center" style="padding-bottom: 20px;">
+        <div style="text-align: center;">
             <div style="margin: auto; width: 80%;">
                 <h2>
                     <b>The Optimal Retirement Investment Calculator</b>
@@ -75,11 +52,13 @@
                         Our simulator will simulate the best possible plan for you. 
                     </p>
 
+                    <br>
+
                     <p>
                         Some questions that can be answer by using our calculator are ...
                     </p>
 
-                    <ul>
+                    <ul style="padding-left:50px">
                         
                         <li> How long will your retirement last?
 
@@ -91,6 +70,9 @@
                             What is the best investment plan?
                         </li>
                     </ul>
+
+                    <br>
+
                     <p>
                         Answer the questions below to see an illustration of your investment. 
                         You can make a few changes and see how it impact your investment.
@@ -103,7 +85,7 @@
         </div>
 
         <!-- Future Plan -->
-        <div class="w3-container w3-center" style="max-width:100%; padding-top:50px; padding-bottom:70px; font-size: 15px">
+        <div style="text-align:center; max-width:100%; padding-top:50px; padding-bottom:70px; font-size: 15px">
 
             <form onsubmit="return false" name="montForm">
                 <div class="container">
@@ -192,9 +174,8 @@
                     <br>
 
                     <div class="row">
-                        <button id="check2" class="w3-button w3-right w3-green w3-hover-black">Create Chart</button>
+                        <button id="check2" style="float: right; color:white; background-color:rgb(0, 190, 25);" class="w3-button w3-hover-black">Create Chart</button>
                     </div>
-                    
                 </div>
             </form>
 
@@ -202,7 +183,7 @@
             <br>
 
             <div id="buttonContainer" style="display: none;">
-                <button onclick="document.getElementById('printerModal').style.display='block'" class="w3-button w3-green w3-hover-black">Print This Page</button>
+                <button onclick="document.getElementById('printerModal').style.display='block'" style= "color:white; background-color:rgb(0, 190, 25);" class="w3-button w3-hover-black">Print This Page</button>
                 <br>
                 <br>
             </div>
@@ -229,7 +210,7 @@
                                 <br>
                                 <br>
                                 <div class="row">
-                                    <button id="print" class="w3-button w3-right w3-green w3-hover-black" onclick="printChart()">Submit</button>
+                                    <button id="print" style="float: right; color:white; background-color:rgb(0, 190, 25);" class="w3-button w3-hover-black" onclick="printChart()">Submit</button>
                                 </div>
                                 <br>
                             </div>
@@ -245,7 +226,7 @@
 
             <div class="container2" style="display: none;" id="resultValues2">
                 <br>
-                <button onclick="document.getElementById('chartExplain').style.display='block'" class="w3-button w3-green w3-hover-black">Explain Chart</button>
+                <button onclick="document.getElementById('chartExplain').style.display='block'" style="color:white; background-color:rgb(0, 190, 25);" class="w3-button w3-hover-black">Explain Chart</button>
 
                 <div id="chartExplain" class="w3-modal">
                     <div class="w3-modal-content w3-card-4 w3-container">
@@ -281,6 +262,7 @@
                                 The simulation runs for 10,000 times and uses all the data gathered to determine the chance 
                                 for you to have money to spend at the end of the year.
                             </p>
+                            <br>
                         </div>
                     </div>
                 </div>
@@ -334,10 +316,10 @@
         </div>
 
         <!-- Contact section -->
-        <div class="w3-container w3-black" style="padding-top: 10px; padding-bottom: 20px;">
-            <div class="w3-center w3-content w3-center">
-                <ul style="list-style-type: none;">
-                    <h2 class="w3-center"><b>Contact Information</b></h2>
+        <div style="padding-top: 10px; padding-bottom: 20px; background-color:black; color:white">
+            <div style="text-align: center;">
+                <ul style = "list-style-type: none;">
+                    <h2><b>Contact Information</b></h2>
                     <li>
                         <span class="first-block">Phone Number: </span>
                         <span class="second-block">xxx - xx - xxxx</span>

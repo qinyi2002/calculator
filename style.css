@@ -1,11 +1,90 @@
-body {
-    margin: 0px;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-}
-  
 * {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  display: none;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+
+  color: white;
+  padding: 15px 30px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: grey;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 850px) {
+  .dropdown {
+      display: block;
+  }
+  .tabs {
+      display: none;
+  }
 }
 
 input[type=text], select, textarea {
