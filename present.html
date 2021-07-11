@@ -7,7 +7,6 @@
         <title>Document</title>
 
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         
@@ -17,8 +16,8 @@
     <body>
         <!-- Navbar -->
         <div class="w3-top">
-            <div class="w3-bar w3-black w3-card">
-                <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-left w3-hover-dark-gray" href="javascript:void(0)" onclick="myFunction()">
+            <div class="w3-bar w3-black">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-left w3-hover-dark-gray" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
                 
@@ -26,13 +25,13 @@
                     Home
                 </a>
 
-                <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
-                    IRA Retirement
+                <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                    TBMRI Calculator
                 </a>
-
-                <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
-                    Optimal Retirement Plan
-                </a>
+    
+                <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                        Monte Carlo Simulator
+                    </a>
 
                 <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
                     Schedule Appointment
@@ -47,12 +46,12 @@
             </a>
 
             <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                IRA Retirement
+                TBMRI Calculator
             </a>
 
             <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                Optimal Retirement Plan
-            </a>
+                    Monte Carlo Simulator
+                </a>
 
             <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
                 Schedule Appointment
@@ -60,31 +59,52 @@
         </div>
 
         <!-- Page content -->
-        <div style="max-width:100%; margin-top:80px" id="pageContent">
+        <div style="max-width:100%; margin-top:80px">
 
             <!-- Push down content on small screens --> 
             <div class="w3-hide-large" style="margin-top:100px"></div>
 
             <!-- About section -->
             <div class="w3-container w3-center" style="padding-bottom: 20px;">
-                    <div style="margin: auto; width: 70%;" >
-                        <h2>
-                            <b>The IRA Retirement Investment Calculator</b>
+                    <div style="margin: auto; width: 80%;">
+                        <h2 >
+                            <b>Taming a Bear Market in Retirement Income Calculator</b>
                         </h2>
         
-                        <div style="max-width:100%;">
-                            <p>Some questions that can be answer by using our calculator are how long will your retirement last,
-                                how much can you withdraw each year, and
-                                what is your balance amount each year.
+                        <div style="max-width:100%; text-align: left;">
+                            <p>If you are thinking about saving for retirement, 
+                                then you should know that your retirement income will change depending on the stock market. 
+                                When the stock market goes down, our calculator can protect your retirement income. 
+                                Our calculator will maximize your retirement income.
+                                It uses the S&P 500 and other information gather to predict the future balance. 
+                                The Taming a Bear Market in Retirement Income Calculator, TBMRI, is 100% stock.
                             </p>
+
+                            <p>
+                                Some questions that can be answer by using our calculator are ...
+                            </p>
+
+                            <ul>
+                                
+                                <li> How long will your retirement last?
+
+                                </li>
+                                <li>
+                                    How much can you withdraw each year?
+                                </li>
+                                <li>
+                                    What is your end of year balance amount?
+                                </li>
+                            </ul>
 
                             <p>
                                 Answer the questions below to see an illustration of your investment. 
                                 You can make a few changes and see how it impact your investment. 
                             </p>
                             <br>
-                            <img src="calculatorImage.jpg" style="width: 350px;">
+                            
                         </div>
+                        <img src="calculatorImage.jpg" style="width: 350px;">
                     </div>
             </div>
 

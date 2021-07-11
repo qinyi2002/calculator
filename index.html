@@ -7,7 +7,6 @@
         <title>Home Page</title>
 
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         
@@ -17,8 +16,8 @@
     <body>
         <!-- Navbar -->
         <div class="w3-top">
-            <div class="w3-bar w3-black w3-card">
-                <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-left w3-hover-dark-gray" href="javascript:void(0)" onclick="myFunction()">
+            <div class="w3-bar w3-black">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-left w3-hover-dark-gray" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
                 
@@ -26,13 +25,13 @@
                     Home
                 </a>
 
-                <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
-                    IRA Retirement
+                <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                    TBMRI Calculator
                 </a>
-
-                <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
-                    Optimal Retirement Plan
-                </a>
+    
+                <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
+                        Monte Carlo Simulator
+                    </a>
 
                 <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-small w3-hover-dark-grey">
                     Schedule Appointment
@@ -47,12 +46,12 @@
             </a>
 
             <a href="present.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                IRA Retirement
+                TBMRI Calculator
             </a>
 
             <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
-                Optimal Retirement Plan
-            </a>
+                    Monte Carlo Simulator
+                </a>
 
             <a href="appointment.html" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey" onclick="myFunction()">
                 Schedule Appointment
@@ -77,7 +76,7 @@
                         <b>The Retirement Investment Calculator</b>
                     </h2>
         
-                    <div style="max-width:100%;">
+                    <div style="max-width:100%; ">
                         <p>
                             Are you investing money randomly?
                             Are you not investing money, without any sense of where you’re going with it?
@@ -94,20 +93,20 @@
                 <div style="padding-top: 40px; width: 60%; margin: auto;">
                     <div class="w3-half">
                         <div class="w3-card w3-container" style="min-height:480px">
-                            <h3>IRA Retirement Calculator</h3><br>
+                            <h3>TBMRI Calculator</h3><br>
                             <i class="fa fa-bar-chart w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
                             <p> The calculator will determine the annual balance and withdrawal amount</p>
-                            <p>Click on the button below to go to the IRA Retirement Calculator</p>
+                            <p>Click on the button below to go to the TBMRI Calculator</p>
                             <a href="present.html" class="w3-button w3-circle w3-margin-bottom w3-center w3-black">Click Here!</a>
                         </div>
                     </div>
                     
                     <div class="w3-half">
                         <div class="w3-card w3-container" style="min-height:480px">
-                            <h3>Optimal Retirement Calculator</h3><br>
+                            <h3>Monte Carlo Simulator</h3><br>
                             <i class="fa fa-balance-scale w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-                            <p> The calculator will determine the success rate of an investment </p>
-                            <p>Click on the button below to go to the Optimal Retirement Calculator</p>
+                            <p> The simulator will determine the success rate of an investment </p>
+                            <p>Click on the button below to go to the Monte Carlo Simulator</p>
                             <a href="future.html" class="w3-button w3-circle w3-margin-bottom w3-center w3-black">Click Here!</a>
                         </div>
                     </div>
