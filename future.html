@@ -37,11 +37,11 @@
     </div>
 
      <!-- Page content -->
-     <div style="max-width:100%; margin-top:30px">
+     <div style="max-width:100%;">
 
         <!-- About section -->
         <div style="text-align: center;">
-            <div style="margin: auto; width: 80%;">
+            <div style="margin: auto; width: 70%; padding-top: 40px;">
                 <h2>
                     <b>The Optimal Retirement Investment Calculator</b>
                 </h2>
@@ -174,7 +174,7 @@
                     <br>
 
                     <div class="row">
-                        <button id="check2" style="float: right; color:white; background-color:rgb(0, 190, 25);" class="w3-button w3-hover-black">Create Chart</button>
+                        <button id="check2" style="float: right; " class="butn">Create Chart</button>
                     </div>
                 </div>
             </form>
@@ -183,7 +183,7 @@
             <br>
 
             <div id="buttonContainer" style="display: none;">
-                <button onclick="document.getElementById('printerModal').style.display='block'" style= "color:white; background-color:rgb(0, 190, 25);" class="w3-button w3-hover-black">Print This Page</button>
+                <button onclick="document.getElementById('printerModal').style.display='block'" class="butn">Print This Page</button>
                 <br>
                 <br>
             </div>
@@ -210,7 +210,7 @@
                                 <br>
                                 <br>
                                 <div class="row">
-                                    <button id="print" style="float: right; color:white; background-color:rgb(0, 190, 25);" class="w3-button w3-hover-black" onclick="printChart()">Submit</button>
+                                    <button id="print" style="float: right; padding-left:20px; padding-right:20px;" class="butn" onclick="printChart()">Submit</button>
                                 </div>
                                 <br>
                             </div>
@@ -226,7 +226,7 @@
 
             <div class="container2" style="display: none;" id="resultValues2">
                 <br>
-                <button onclick="document.getElementById('chartExplain').style.display='block'" style="color:white; background-color:rgb(0, 190, 25);" class="w3-button w3-hover-black">Explain Chart</button>
+                <button onclick="document.getElementById('chartExplain').style.display='block'" class="butn">Explain Chart</button>
 
                 <div id="chartExplain" class="w3-modal">
                     <div class="w3-modal-content w3-card-4 w3-container">
@@ -241,10 +241,12 @@
                             </h6>
 
                             <p>
-                                The chart shows you the possibilities of succeeding or failing each year. 
-                                It gives a clear image of whether your balance have more than $0 at the end of the year. 
-                                The horizontal axis tells you the years and the vertical axis tells you the percentage of
-                                succeeding. This chart is formulated by using the Monte Carlo simulation.
+
+                                The chart shows you the possibilities of succeeding or failing each year.
+                                It gives a clear image of whether your balance have more than $0 at the
+                                end of the year. The horizontal axis tells you the years and the vertical
+                                axis tells you the percentage of succeeding. This chart is formulated by
+                                using the Monte Carlo simulation.
                             </p>
 
                             <h6>
@@ -252,15 +254,18 @@
                             </h6>
 
                             <p>
-                                Monte Carlo simulation helps you plan for retirement. 
-                                It allows you to visualize how you would benefit each year by knowing the maximum amount of money to 
-                                withdraw from balance so that you would not have any conflict dealing with the mark uncertainties.
-                                For the stock market, we used the S&P 500 from 1926 to 2020. 
-                                We obtain our AAA bond annual return and T bill from New York University's database. 
-                                Monte Carlo simulation determines the success rate by randomly select a combination of ratings from our 
-                                database and then calculate when will the balance exhaust. 
-                                The simulation runs for 10,000 times and uses all the data gathered to determine the chance 
-                                for you to have money to spend at the end of the year.
+                                Monte Carlo simulation helps you plan for retirement. It allows you to
+                                visualize how you would benefit each year by knowing the maximum
+                                amount of money to withdraw from balance so that you would not
+                                have any conflict dealing with the mark uncertainties. For the stock
+                                market, we use the annual returns of the S&P 500 Index (1928-2020).
+                                We obtain our BAA bond annual return and T bill from New York
+                                University's database (from 1928-2020).  Monte Carlo simulation
+                                determines the success rate by randomly select a combination of
+                                ratings from our database and then calculate when will the balance
+                                exhaust. The simulation runs for 10,000 times and uses all the data
+                                gathered to determine the chance for you to have money to spend at
+                                the end of the year.
                             </p>
                             <br>
                         </div>
@@ -327,7 +332,7 @@
 
                     <li>
                         <span class="first-block">Email: </span>
-                        <span class="second-block">xxxxx @gmail.com</span>
+                        <span class="second-block">TBMRIcalculator@gmail.com</span>
                     </li>
                 </ul>
             </div>
@@ -336,8 +341,7 @@
         <!-- End page content -->
     </div>
 
-    <script src="scriptFuture.js">
-    </script>
+    <script src="scriptFuture.js"></script>
 </body>
 
 </html>
