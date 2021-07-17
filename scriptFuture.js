@@ -1,13 +1,3 @@
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("nav");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
 var ctx3 = document.getElementById('myChart3').getContext("2d");
 var chart3 = null;
 
@@ -66,7 +56,7 @@ function monteCarloSimulation() {
     ];
 
     // S&P 500 rate
-    var iraAnnualRate = [0.1162, 0.3749, 0.4361, -0.0842, 
+    var iraAnnualRate = [0.4361, -0.0842, 
         -0.2490, -0.4334, -0.0819, 0.5399, -0.0144, 0.4767, 0.3392, -0.3503, 0.3112, -0.0041, 
         -0.0978, -0.1159, 0.2034, 0.2590, 0.1975, 0.3644, -0.0807, 0.0571, 0.0550, 0.1879,
         0.3171, 0.2402, 0.1837, -0.0099, 0.5262, 0.3156, 0.0656, -0.1078, 0.4336, 0.1196,
@@ -79,22 +69,6 @@ function monteCarloSimulation() {
         0.1840
     ];
 
-/*
-    // S&P 500 rate with dividen
-    var iraAnnualRate = [
-        0.4549,-0.0830,
-        -0.2307,-0.3833,0.0185,0.5820,-0.0451,0.4309,0.3060,-0.3766,0.3196,0.0021,
-        -0.1131,-0.1702,0.0744,0.1802,0.1711,0.3280,-0.1558,-0.0803,-0.0184,0.1946,
-        0.2940,0.1467,0.1552,-0.0201,0.5209,0.3297,0.0583,-0.1335,0.3990,0.1094,
-        -0.0111,0.2530,-0.0989,0.2111,0.1495,0.1065-0.1261,0.2046,0.0628,-0.1299,
-        -0.0215,0.0952,0.1499,-0.1929,-0.3328,0.2552,0.1710,-0.1266,-0.0104,0.0653,
-        0.1602,-0.1363,0.1346,0.1853,0.0177,0.2674,0.1629,0.0207,0.1197,0.2542,
-        -0.0803,0.2494,0.0433,0.0681,-0.0125,0.3345,0.1919,0.3006,0.2638,0.1830,
-        -0.1200,-0.1427,-0.2318,0.2551,0.0786,0.0139,0.1200,0.0256,-0.3890,0.2638,
-        0.1297,-0.0103,0.1354,0.3024,0.1171,0.0126,0.1038,0.1907,-0.0651,0.2827,
-        0.1661
-    ];
-*/
     var aaa = [0.0328, 0.0414, 
         0.0586, -0.0156, 0.1107, 0.0530, 0.1015, 0.0690, 0.0633, 0.0217, 0.0431, 0.0428,
         0.0493, 0.0193, 0.0271, 0.0342, 0.0309, 0.0348, 0.0261, 0.0046, 0.0346, 0.0462,
@@ -155,7 +129,7 @@ function monteCarloSimulation() {
             age = retireAge;
 
             for (var i = 0; i <= k; i++) {
-                randomIndex = Math.floor(Math.random() * 95); // index 0 to 94
+                randomIndex = Math.floor(Math.random() * 93); // index 0 to 94
                 randomAAA = Math.floor(Math.random() * 93); // index 0 to 93
                 randomTBill = Math.floor(Math.random() * 93); // index 0 to 93
 
@@ -234,7 +208,7 @@ function monteCarloSimulation() {
             age = retireAge;
 
             for (var i = 0; i <= k; i++) {
-                randomIndex = Math.floor(Math.random() * 95);
+                randomIndex = Math.floor(Math.random() * 93);
                 randomAAA = Math.floor(Math.random() * 93); // index 0 to 93
                 randomTBill = Math.floor(Math.random() * 93); // index 0 to 93
 
@@ -325,7 +299,11 @@ document.getElementById("check2").addEventListener('click', () => {
     var d = document.forms["montForm"]["savingLastFuture"].value;
     var e = document.forms["montForm"]["retireAgeFuture"].value;
 
-    if (a == "" || b == "" || c == "" || d == "" || e == "" ) {
+    var f = document.forms["montForm"]["stock"].value;
+    var g = document.forms["montForm"]["bond"].value;
+    var h = document.forms["montForm"]["cash"].value;
+
+    if (a == "" || b == "" || c == "" || d == "" || e == "" || f =="" || g == "" || h == "") {
         alert("Please Fill All Required Field");
     }
     else if (stockPercentage >= 0 && bondPercentage >= 0 && cashPercentage >= 0 && 

@@ -1,13 +1,3 @@
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("nav");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Auto change the rate %
@@ -531,7 +521,7 @@ document.getElementById("check").addEventListener('click', () => {
                 plugins: {
                     title: {
                         display: true,
-                        text: 'With Annual Withdrawals',
+                        text: 'Annual Withdrawals Strategy',
                         font: {
                             size: 20
                         },
@@ -592,7 +582,7 @@ document.getElementById("check").addEventListener('click', () => {
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Modified Withdrawal Strategy',
+                        text: 'Taming a Bear Market in Retirement Income Strategy',
                         font: {
                             size: 20
                         },

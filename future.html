@@ -43,7 +43,7 @@
         <div style="text-align: center;">
             <div style="margin: auto; width: 70%; padding-top: 40px;">
                 <h2>
-                    <b>The Optimal Retirement Investment Calculator</b>
+                    <b>Monte Carlo Simulator</b>
                 </h2>
 
                 <div style="max-width:100%; text-align: left;">
@@ -91,10 +91,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-left">
-                            <label>What is your retirement saving balance?</label>
+                            <label>What is your retirement saving balance? (IRA 401K or other)</label>
                         </div>
                         <div class="col-right">
-                            <input type="number" id="initialBalanceFuture" name="initialBalanceFuture" placeholder="Input Inital Amount" onchange="calcRate()" min="0" max="10000000">
+                            <input type="number" id="initialBalanceFuture" name="initialBalanceFuture" 
+                            placeholder="Input Inital Amount: (0 - 10000000)" onchange="calcRate()" min="0" max="10000000">
                         </div>
                     </div>
 
@@ -103,7 +104,8 @@
                             <label>What is your retirement withdraw amount?</label>
                         </div>
                         <div class="col-right">
-                            <input type="number" id="withdrawFuture" name="withdrawFuture" placeholder="Input Withdraw Amount" onchange="calcRate()" min="0" max="10000000">
+                            <input type="number" id="withdrawFuture" name="withdrawFuture" placeholder="Input Withdraw Amount: (0 - 10000000)"
+                             onchange="calcRate()" min="0" max="10000000">
                         </div>
                     </div>
 
@@ -122,7 +124,7 @@
                         </div>
                         <div class="col-right">
                             <input type="number" id="inflationPercentageFuture" name="inflationPercentageFuture" step="any"
-                            placeholder="Input Inflation Percentage" min="0" max="100">
+                            placeholder="Input Inflation Percentage: (0 - 100)" min="0" max="100">
                         </div>
                     </div>
 
@@ -131,7 +133,7 @@
                             <label>What is your retirement age?</label>
                         </div>
                         <div class="col-right">
-                            <input type="number" id="retireAgeFuture" name="retireAgeFuture" placeholder="Input Age" min="60" max="72">
+                            <input type="number" id="retireAgeFuture" name="retireAgeFuture" placeholder="Input Age: (60 - 72)" min="60" max="72">
                         </div>
                     </div>
 
@@ -140,7 +142,16 @@
                             <label>How many years should your savings last?</label>
                         </div>
                         <div class="col-right">
-                            <input type="number" id="savingLastFuture" name="savingLastFuture" placeholder="Input Range" min="1" max="50">
+                            <input type="number" id="savingLastFuture" name="savingLastFuture" placeholder="Input Range: (1 - 50)" min="1" max="50">
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-note">
+                            <b><label>NOTE: The percentage for stock, bond, and cash should add up to 100%.</label></b>
                         </div>
                     </div>
 
@@ -199,21 +210,27 @@
                                 <div class="row">
                                     <label for="fname">* First Name: </label>
                                     <input name="entry.1884265043" type="text" id="fname" required/>
+
                                     <label for="lname">* Last Name: </label>
                                     <input name="entry.1097052344" type="text" id="lname" required/>
-                                    <label for="phone">* Phone Number: </label>
-                                    <input name="entry.382148978" type="text" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number Format: xxx-xxx-xxxx" title="The format for the phone number should be xxx-xxx-xxxx" />
+                                    
+                                    <label for="email">* Email: </label>
+                                    <input name="entry.158784994" type="email" id="email" placeholder="" required/>
 
-                                    <label for="email">Email: </label>
-                                    <input name="entry.158784994" type="email" id="email" placeholder="" />
+                                    <label for="phone">Phone Number: </label>
+                                    <input name="entry.382148978" type="text" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number Format: xxx-xxx-xxxx" title="The format for the phone number should be xxx-xxx-xxxx" />
                                 </div>
                                 <br>
                                 <br>
                                 <div class="row">
                                     <button id="print" style="float: right; padding-left:20px; padding-right:20px;" class="butn" onclick="printChart()">Submit</button>
                                 </div>
-                                <br>
                             </div>
+
+                            <div style="text-align: left; padding-left:15%">
+                                <p>Please see our <a style="color: blue; text-decoration: underline;" href="privacy.html">Privacy Policy.</a></p>
+                            </div>
+                            <br>
                         </form>
                     </div>
                 </div>
@@ -321,20 +338,30 @@
         </div>
 
         <!-- Contact section -->
-        <div style="padding-top: 10px; padding-bottom: 20px; background-color:black; color:white">
+        <div style="padding-top: 10px; padding-bottom: 40px; background-color:black; color:white">
             <div style="text-align: center;">
                 <ul style = "list-style-type: none;">
-                    <h2><b>Contact Information</b></h2>
-                    <li>
-                        <span class="first-block">Phone Number: </span>
-                        <span class="second-block">xxx - xx - xxxx</span>
-                    </li>
-
-                    <li>
+                    <h3><b>Contact Information</b></h3>
+                    
+                    <li style="font-size: 18px;">
                         <span class="first-block">Email: </span>
                         <span class="second-block">TBMRIcalculator@gmail.com</span>
                     </li>
                 </ul>
+            </div>
+            <div style="padding-left: 10%; padding-right: 10%;">
+                <h6>
+                    Content Disclaimer
+                </h6>
+                <p style="font-size: 13px;">
+                    The information and opinions expressed herein are obtained from sources believed to be
+                    reliable; however, no representation is made as to, and no responsibility or liability is
+                    accepted for, the accuracy or completeness of the information. The information is provided
+                    as general information and is not intended to be specific financial guidance. The information
+                    is subject to change without notice. Before making financial decisions, you should consult a
+                    financial, legal or tax professional. Providing personal information may result in contact from
+                    an insurance agent. Unauthorized use is prohibited.
+                </p>
             </div>
         </div>
 
