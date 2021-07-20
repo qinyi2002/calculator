@@ -499,15 +499,13 @@ document.getElementById("check").addEventListener('click', () => {
             datasets: [{
                     data: balanceArray,
                     label: "IRA Balance",
-                    borderColor: "rgb(62,149,205)",
-                    backgroundColor: "rgb(62,149,205,0.1)",
+                    backgroundColor: "rgb(62,149,205)",
                     borderWidth: 1,
                 },
                 {
                     data: withdrawArray,
                     label: "Annual Withdrawal",
-                    borderColor: "rgb(60,186,159)",
-                    backgroundColor: "rgb(60,186,159,0.1)",
+                    backgroundColor: "rgb(60,186,159)",
                     borderWidth: 1,
                 }
             ],
@@ -559,15 +557,13 @@ document.getElementById("check").addEventListener('click', () => {
             datasets: [{
                     data: balanceArray2,
                     label: "IRA Balance",
-                    borderColor: "rgb(62,149,205)",
-                    backgroundColor: "rgb(62,149,205,0.1)",
+                    backgroundColor: "rgb(62,149,205)",
                     borderWidth: 1,
                 },
                 {
                     data: withdrawArray2,
                     label: "Opitmal Withdrawal",
-                    borderColor: "rgb(60,186,159)",
-                    backgroundColor: "rgb(60,186,159,0.1)",
+                    backgroundColor: "rgb(60,186,159)",
                     borderWidth: 1,
                 }
             ],
